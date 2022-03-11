@@ -6,3 +6,6 @@ data class ShopItem(
     val count: Int,
     val enabled: Boolean
 )
+// Business Logic SOLID
+// S - single responsibility - принцип единой ответственности
+
