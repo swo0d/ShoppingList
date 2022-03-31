@@ -1,12 +1,9 @@
 package com.example.shoppinglist.presentation
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-
 // дата и presentation слой не должны знать друг о друге
-import com.example.shoppinglist.data.ShopListRepositoryImpl
 
+import androidx.lifecycle.ViewModel
+import com.example.shoppinglist.data.ShopListRepositoryImpl
 import com.example.shoppinglist.domain.DeleteShopItemUseCase
 import com.example.shoppinglist.domain.EditShopItemUseCase
 import com.example.shoppinglist.domain.GetShopListUseCase
@@ -46,5 +43,8 @@ class MainViewModel : ViewModel() {
         // автоматически абновляем список элементов
        // getShopList()
     }
+  //  fun editShopItem(shopItem: ShopItem){
+  //      editShopItemUseCase.editShopItem(shopItem)
+   // }
 
 }
